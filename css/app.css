@@ -1,0 +1,346 @@
+a.current-info {
+  font-family: 'Montserrat', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
+}
+
+a.current.info:hover {
+  cursor:none !important;
+}
+
+.has-tip {
+  color: darkgray;
+}
+
+.has-tip:hover, .has-tip:focus {
+  border-bottom: dotted 1px #40A058;
+  color: #7C898B;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  color: #7C898B;
+}
+
+.row {
+  max-width: 80rem;
+  margin-top: 1.875rem;
+margin-bottom: 1.875rem;
+}
+
+text {
+  font-size: .8em;
+  fill: #7C898B;
+}
+
+text.snapshot-main, text.healthsnapshot1, text.healthsnapshot2, text.healthsnapshot3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.1em;
+  letter-spacing: -5px;
+}
+
+text.snapshot-main {
+  fill: white;
+}
+
+text.snapshot-rewards {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.7em;
+  fill: white;
+}
+
+/* Logins */
+
+.logins text {
+  font-family: 'Montserrat', sans-serif;
+  color: #7C898B;
+}
+
+text.logins-text {
+  font-size: 5.5em;
+  letter-spacing: -3px;
+}
+
+text.logins-sub-text {
+  font-size: 1em;
+}
+
+path.better {
+  fill: #3AB795;
+}
+
+path.worse {
+ fill: #EF2D56;
+}
+
+path.no-login-change {
+ display: none;
+}
+
+/* Better, worse styling */
+
+text.better, text.worse, text.no-change, text.red, text.amber, text.green {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+}
+
+text.better, text.green {
+ fill: #3AB795;
+}
+
+text.worse, text.red {
+ fill: #EF2D56;
+}
+
+text.no-change {
+ fill: #7C898B;
+}
+
+text.amber, text.healthsnapshot2 {
+  fill: #F49C14;
+}
+
+line {
+  shape-rendering: crispEdges;
+}
+
+line.minor  {
+  stroke: #B6D6CC;
+  stroke-dasharray: 2,2;
+}
+
+path.domain {
+  fill: none;
+  stroke: #7C898B;
+}
+
+g.grid > g.tick > line {
+  stroke: lightgray;
+}
+
+/* Set the opacity of the domain paths for grid lines to zero so they don't overlay the main axes */
+g.grid > path.domain {
+  opacity: 0;
+}
+
+/* ---------------- End axes styling ---------------- */
+
+/* ---------------- Start subject line and circle styling ---------------- */
+
+path.subject-line {
+  fill: none;
+  stroke: #8EC995;
+  stroke-width: 3;
+  opacity: .75;
+}
+
+path.overall-line, path.overview-line {
+  fill: none;
+  stroke: #8EC995;
+  stroke-width: 2;
+}
+
+path.parent-login-line, path.student-login-line {
+  fill: none;
+  stroke: #E56399;
+  stroke-width: 2;
+}
+
+circle.student-login {
+  fill: #E56399;
+}
+
+circle.parent-login {
+  fill: white;
+    stroke: #e56399;
+    stroke-width: 2;
+    r: 3;
+}
+
+path.reward-collected-line, path.reward-created-line {
+  fill: none;
+  stroke: #586994;
+  stroke-width: 2;
+}
+
+circle.reward-collected {
+  fill: #586994;
+}
+
+circle.reward-created {
+    fill: white;
+    stroke: #586994;
+    stroke-width: 2;
+    r: 3;
+}
+
+circle.overview-circle, circle.average-overall-circle, circle.average-snapshot, circle.total-snapshot, circle.retries-snapshot {
+  fill: #8EC995;
+}
+
+.scatter > circle:hover {
+  r: 5.5;
+  stroke-width: 4;
+}
+
+.scatter > circle {
+  fill: white;
+}
+
+.average > circle:hover, .subject-group > circle:hover, circle.overview-circle:hover, circle.student-login:hover, circle.reward-collected:hover {
+  r: 5.5;
+}
+
+circle.reward-created:hover, circle.parent-login:hover {
+  r: 4.5;
+}
+
+circle.edplace-snapshot {
+  fill: #7C898B;
+}
+
+text.snapshot-main {
+  letter-spacing: 1;
+}
+
+/* Set subject colours */
+g#Science > circle, rect.Science {
+  fill: #3598DC;
+}
+
+g#Science > path {
+  fill: none;
+  stroke: #3598DC;
+  stroke-width: 2;
+}
+
+g#English > circle, rect.English {
+  fill: #F49C14;
+}
+
+g#English > path {
+  fill: none;
+  stroke: #F49C14;
+  stroke-width: 2;
+}
+
+g#Maths > circle, rect.Maths  {
+  fill: #F26466;
+}
+
+g#Maths > path {
+  fill: none;
+  stroke: #F26466;
+  stroke-width: 2;
+}
+
+/* ---------------- End subject styling ---------------- */
+
+/* ---- Health styling ---- */
+
+.health circle {
+  stroke-width: 40;
+  fill: white;
+}
+
+circle.health1 {
+  stroke: #F26466;
+}
+
+text.healthsnapshot1 {
+  fill: #F26466;
+}
+
+text.healthsnapshot3 {
+  fill: #8EC995;
+}
+
+circle.health2 {
+  stroke: #F49C14;
+}
+
+circle.health3 {
+  stroke: #8EC995;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #272727;
+  border-radius: 2px;
+  background: white;
+  padding: 1rem;
+}
+
+/* Tooltips */
+
+.d3-tip {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+  line-height: 1;
+  padding: 10px;
+  background: rgba(124, 137, 139, 0.9);
+  opacity: .7;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(124, 137, 139, 0.9);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Legend / key */
+.scatterKey text, .averageKey text, .overallKey text, .worksheetsKey text, .loginsKey text, .rewardsKey text {
+font-family: 'Montserrat', sans-serif;
+font-size: .7em;
+fill: white;
+}
+
+g.overallKey > rect, g.worksheetsKey > rect {
+  fill: #8EC995;
+}
+
+g.loginsKey > rect {
+  fill: #E56399;
+}
+
+g.rewardsKey > rect {
+  fill: #586994;
+}
+
+g.scatterKey:hover > rect, g.averageKey:hover > rect, g.overallKey:hover > rect, g.worksheetsKey:hover > rect, g.loginsKey:hover > rect, g.rewardsKey:hover > rect {
+  fill: #7C898B;
+  cursor: pointer;
+}
+
+g.scatterKey:hover > text, g.averageKey:hover > text, g.overallKey:hover > text, g.worksheetsKey:hover > text, g.loginsKey:hover > text, g.rewardsKey:hover > text {
+  fill: lightgray;
+  cursor: pointer;
+}
+
+g.deactivated > rect {
+  fill: #7C898B;
+  cursor: pointer;
+}
+
+g.deactivated > text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  fill: lightgray;
+  cursor: pointer;
+}
